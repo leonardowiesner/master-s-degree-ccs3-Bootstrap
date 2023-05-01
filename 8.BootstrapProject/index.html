@@ -28,39 +28,76 @@
             <img src="img/logo.png" alt="" width="30" height="30" class="me-2">
             Web Bootstrap
         </a>
-          <a class="navbar-brand text-light" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- BOTON RESPONSIVE -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSuportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </button>
+          <div class="collapse navbar-collapse pb-2 pb-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-3">
               <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link text-light" href="#">Enlace</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled text-light">Disabled</a>
+                <a class="nav-link text-light" href="#">Enlace</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Enlace</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Enlace</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+
+            <div class="d-flex justify-content-center align-items-center">
+                <button class=" btn btn-primary btn-sm rounded-pill">Contactanos</button>
+            </div>
+
           </div>
         </div>
-      </nav>
+    </nav>
+
+    <!-- HEADER / CAROUSEL  -->
+    <div class="container-fluid p-0">
+        <div id="carouselExampleIndicators" class="carousel header slide" data-bs-ride="carousel">
+
+            <!-- INDICATORS -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!-- INNER CAROUSEL-->
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active overlay h-100">
+                    <img src="img/image.jpg" class="d-block w-100 h-100" alt="...">
+                    <div class="carousel-caption d-none d-md-flex justify-content-center align-items-center
+                    flex-column h-100">
+                        <h5 class="display-1">Welcome to our web</h5>
+                        <p class="fs-2 fw-light">Lorem ipsum inverbatum parabenum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="img/image2.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="img/image3.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+            </div>
+            <!-- BUTTONS -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
