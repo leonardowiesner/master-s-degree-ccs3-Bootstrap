@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e9ecf4;
+    font-family: sans-serif;
+}
+
+.grid{
+    display: grid;
+
+    /* PASO 2 DEFINIR FILAS Y COLUMNAS */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px 500px;
+    width: 70%;
+    border: 5px solid #222;
+    margin: 50px auto;
+    font-size: 50px;
+
+    /* PASO 3 FILAS Y COLUMNAS EN UNICA LINEA */
+    /* grid-template: 200px 100px 500px / 1fr 1fr 1fr; */
+    /* PASO 4 Establecer separación */
+    gap: 50px;
+
+    /* REPEAT FUNCTION */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5,2fr);
+
+    /* MINMAX FUNCTION , ALLOWS RESIZE A MIN SIZE AND A MAX SIZE */
+    grid-template-columns: minmax(150px, 800px) 1fr 1fr;
+
+    /* POSITION GRID */
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    /* trick1 set values for start and end */
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+
+    /* trick2 dont recomended it's confuse */
+    /* - First param row start */
+    /* - Second param column start */
+    /* - Third param row end */
+    /* - Fourth param column end */
+
+    grid-area: 3 / 2 / 5 / -1;
+
+}
+
+.grid div{
+    padding:20px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background: #ff7600;
+    border: 1px solid #bf5800;
+}
